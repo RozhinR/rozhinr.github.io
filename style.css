@@ -1,0 +1,84 @@
+
+/* global level*/
+body {
+    font-family: Arial;
+    font-size: 1.1rem; 
+    background: #102A43;
+    color: #3c5a73;
+    line-height: 1.5; 
+    padding: 1.5rem; 
+}
+
+/* MAIN CARD CONTAINER Creates a centered "card" that holds all page content */
+.headmain {
+    max-width: 720px; 
+    margin: 0 auto; 
+    background: #E9e4d6;
+    border-radius: 1.5rem; 
+    box-shadow: 0 8px 20px rgba(0,0,0,0.03); 
+    overflow: hidden; 
+    border: 1px solid #ece6df; 
+}
+
+/* HEADER STYLES Top section containing title and navigation*/
+header {
+    background-color: #c7bfae;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* NAVIGATION LINK STYLES */
+nav a {
+    color: white;
+    margin: 0 15px; 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+/* Hover effect - provides visual feedback when user mouses over links */
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* MAIN CONTENT AREA */
+main {
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* Clearfix - ensures container properly contains floated elements */
+main::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* IMAGE STYLES */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+/* FOOTER STYLES */
+footer {
+    text-align: center;
+    padding: 10px;
+    color: #6d8598;
+}
+
+/* Horizontal rule (divider line) styling */
+hr{
+    border: none;
+    height: 1px;
+    background: #c7bfae;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 600px) {
+    body { padding: 0.8rem; }
+    nav a { display: inline-block; margin: 0 8px; }
+}
